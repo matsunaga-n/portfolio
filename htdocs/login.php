@@ -37,7 +37,7 @@ $data = get_as_array($link, $sql);
 close_db_connect($link);
 
 // 登録データを取得できたか確認
-if (($user_name === DB_USER) && ($passwd === DB_PASSWD)) {
+if (($user_name === 'root') && ($passwd === 'root')) {
    header('Location: tool.php');
 } elseif (isset($data[0]['id'])) {
    // セッション変数にuser_idを保存
